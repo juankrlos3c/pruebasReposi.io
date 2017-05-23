@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>QUnit Example</title>
+  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+  <script>
+
+    suma = function(numuno,numdos){
+        return numuno+numdos;
+    }
+
+    QUnit.test("primer test",function(test){
+
+        var resultado = suma(4,6); 
+        test.equal(9, resultado ,"prueba ingresos");
+
+    });
+
+  </script>
+</body>
+</html>
+
